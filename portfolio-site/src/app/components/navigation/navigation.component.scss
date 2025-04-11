@@ -1,11 +1,19 @@
+@use '@angular/material' as mat;
+
 .sidenav-container {
   height: 100vh;
 }
 
 .sidenav {
-  width: 15%;
-  background-color: #00796b;
+  width: 17%;
+  background-color: #00695c;
   color: white;
+
+  ::ng-deep {
+    .mat-drawer-inner-container {
+      border-radius: 0;
+    }
+  }
 }
 
 .sidenav-content {
@@ -31,8 +39,8 @@
     text-align: left;
     justify-content: flex-start;
     padding: 0.5rem 1rem;
-    border-radius: 4px;
     transition: background-color 0.3s;
+    border-radius: 0;
 
     &:hover {
       background-color: rgba(255, 255, 255, 0.1);
