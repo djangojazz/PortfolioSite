@@ -26,13 +26,13 @@ jobs:
       run: |
         npm install
         npm run build
-        cp web.config dist/portfolio-site/
+        cp web.config dist/
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v4
       with:
         name: node-app
-        path: ./portfolio-site/dist/portfolio-site
+        path: ./portfolio-site/dist
 
   deploy:
     permissions:
