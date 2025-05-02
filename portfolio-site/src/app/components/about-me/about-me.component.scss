@@ -1,3 +1,4 @@
+@use '../../../../m3-theme.scss' as theme;
 @import '../../../styles.scss';
 
   .profile-image {
@@ -6,7 +7,7 @@
     margin: 0 auto 1.5rem;
     display: block;
     object-fit: cover;
-    border: 3px solid #3498db;
+    border: 10px solid theme.get-palette-value('primary', 50);
   }
 
   

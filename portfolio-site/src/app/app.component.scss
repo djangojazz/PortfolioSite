@@ -1,11 +1,8 @@
 // Styles moved to navigation component
 
 .app-container {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
-  
-  // Add padding to the bottom to prevent content from being hidden behind the fixed footer
-  padding-bottom: 60px;
 }
 

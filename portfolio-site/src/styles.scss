@@ -1,9 +1,19 @@
+@use '@angular/material' as mat;
+@use '../m3-theme.scss' as theme;
+
+@include mat.core();
+
+html {
+  @include mat.core-theme(theme.$dark-theme);
+  @include mat.button-theme(theme.$dark-theme);
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 h1 {
     margin-top: 20px;
-    color: #ffffff;
+    color: theme.get-palette-value('primary', 60);
     margin-bottom: 2rem;
     font-size: 2.5rem;
     text-align: center;
@@ -23,7 +33,7 @@ mat-card {
         mat-card-title {
           font-size: 2rem;
           font-weight: 500;
-          color: #3498db;
+          color: theme.get-palette-value('primary', 50);
         }
     
         mat-card-subtitle {
@@ -39,16 +49,4 @@ mat-card {
           font-size: 1.1rem;
         }
       }
-}
-
-.mat-slider-thumb {
-  background-color: #00796b !important; /* Deep teal color */
-}
-
-.mat-slider-track-fill {
-  background-color: #004d40 !important; /* Darker teal for the filled track */
-}
-
-.mat-slider-track-background {
-  background-color: #b2dfdb !important; /* Lighter teal for the background track */
 }
