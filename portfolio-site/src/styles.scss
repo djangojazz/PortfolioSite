@@ -19,7 +19,7 @@ html {
   @include mat.button-theme(theme.$dark-theme);
 }
 
-html, body { height: 100%; }
+html, body { height: 100%; background-color: black; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 h1 {
@@ -71,8 +71,8 @@ mat-card {
   border: 10px solid $tan;
 }
 
-.setting {
-  height: 60px;
+.horizontal-setting {
+  height: 50px;
   background-color: $veryDarkTeal;
   color: $tan;
   justify-content: center;
