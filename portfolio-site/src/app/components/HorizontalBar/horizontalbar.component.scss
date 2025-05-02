@@ -1,12 +1,11 @@
-@use '@angular/material' as mat;
-@use '../../../../m3-theme.scss' as theme;
+@import '../../../styles.scss';
 
 .setting {
   height: 60px;
-  background-color: theme.get-palette-value('primary', 10);
-  color: theme.get-palette-value('primary', 80);
+  background-color: $veryDarkTeal;
+  color: $lighterTeal;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  border: 3px solid theme.get-palette-value('primary', 20);
+  border: 3px solid $darkBackground;
 } 

@@ -146,7 +146,3 @@ $dark-theme: mat.define-theme((
     use-system-variables: true,
   ),
 ));
-
-@function get-palette-value($palette-name, $key) {
-  @return map.get(map.get($_palettes, $palette-name), $key);
-}
