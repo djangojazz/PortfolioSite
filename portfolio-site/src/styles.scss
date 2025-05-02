@@ -80,3 +80,20 @@ mat-card {
   font-size: 2rem;
   border: 3px solid $darkBackground;
 } 
+
+a {
+  color: $tan;
+  text-align: left;
+  justify-content: flex-start;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+  border-radius: 0;
+
+  &:hover {
+    background-color: $teal;
+  }
+
+  &.active {
+    background-color: $darkTeal;
+  }
+}
