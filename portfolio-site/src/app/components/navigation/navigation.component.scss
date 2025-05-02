@@ -7,8 +7,8 @@
 .sidenav {
   width: 20%;
   background-color: $veryDarkTeal;
-  color: $darkBackground;
-
+  color: $tan;
+  font-size: large;
 }
 
 .sidenav-content {
@@ -27,7 +27,7 @@
   }
 
   a {
-    color: $lighterTeal;
+    color: $tan;
     text-align: left;
     justify-content: flex-start;
     padding: 0.5rem 1rem;
@@ -35,11 +35,11 @@
     border-radius: 0;
 
     &:hover {
-      background-color: $darkTeal;
+      background-color: $teal;
     }
 
     &.active {
-      background-color: $teal;
+      background-color: $darkTeal;
     }
   }
 }
