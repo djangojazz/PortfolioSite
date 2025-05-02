@@ -61,3 +61,22 @@ mat-card {
         }
       }
 }
+
+.profile-image {
+  width: 200px;
+  height: 300px;
+  margin: 0 auto 1.5rem;
+  display: block;
+  object-fit: cover;
+  border: 10px solid $teal;
+}
+
+.setting {
+  height: 60px;
+  background-color: $veryDarkTeal;
+  color: $lighterTeal;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border: 3px solid $darkBackground;
+} 
